@@ -2641,7 +2641,7 @@ document.getElementById('deck').addEventListener('click',e=>{if(e.target.closest
 let tx=0;
 document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true});
 document.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50){d<0?nx():pv();}},{passive:true});
-document.getElementById('pb').style.width=(1/T*100)+'%';
+document.getElementById('pb').style.width=(1/T*100)+'%';S.forEach((s,i)=>{if(i!==0)s.style.visibility='hidden';});
 setTimeout(()=>document.getElementById('hint').style.opacity='0',4000);
 </script>
 </body>
