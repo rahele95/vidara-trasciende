@@ -71,9 +71,9 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-fam
 .ei{font-size:clamp(14px,1.56vw,17px);color:rgba(255,255,255,.72);padding:7px 0;border-bottom:1px solid rgba(255,255,255,.05);display:flex;align-items:center;gap:9px}
 .ei::before{content:'→';font-size:12px;opacity:.4;color:var(--copper)}
 /* BIO */
-.bio{display:grid;grid-template-columns:110px 1fr;gap:14px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.bio{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .bio-l{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--copper);padding-top:2px}
-.bio-v{font-size:clamp(12px,1.32vw,14px);color:rgba(255,255,255,.72);line-height:1.5}
+.bio-v{font-size:clamp(14px,1.55vw,17px);color:rgba(255,255,255,.82);line-height:1.6}
 /* NER */
 .ner{border:1px solid rgba(200,121,65,.2);padding:24px 16px;text-align:center}
 .ner-l{font-family:'Cormorant Garamond',serif;font-size:clamp(53px,6.6vw,86px);font-weight:300;color:var(--copper);display:block;line-height:1}
@@ -90,10 +90,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-fam
 .cbox-c .cbox-l{color:var(--copper)}
 .cbox-t{font-size:clamp(13px,1.44vw,16px);color:rgba(255,255,255,.72);line-height:1.7}
 /* PC */
-.pc{background:rgba(255,255,255,.03);border:1px solid rgba(200,121,65,.14);border-top:2px solid var(--copper);padding:20px 16px}
-.pc-n{font-family:'Cormorant Garamond',serif;font-size:41px;font-weight:300;color:rgba(200,121,65,.2);line-height:1;margin-bottom:5px}
-.pc-l{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--copper);margin-bottom:3px}
-.pc-t{font-size:clamp(12px,1.32vw,14px);color:rgba(255,255,255,.7);line-height:1.5}
+.pc{background:rgba(255,255,255,.03);border:1px solid rgba(200,121,65,.14);border-top:2px solid var(--copper);padding:28px 22px}
+.pc-n{font-family:'Cormorant Garamond',serif;font-size:58px;font-weight:300;color:rgba(200,121,65,.2);line-height:1;margin-bottom:6px}
+.pc-l{font-size:16px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--copper);margin-bottom:5px}
+.pc-t{font-size:clamp(17px,1.9vw,22px);color:rgba(255,255,255,.7);line-height:1.5}
 /* VIDEO BOX */
 .vbox{width:min(560px,82vw);aspect-ratio:16/9;background:rgba(0,0,0,.45);border:1px solid rgba(200,121,65,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
 /* NAV */
@@ -322,79 +322,8 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-fam
 </div>
 
 <!-- S11 FORMACIÓN ACADÉMICA: sin imagen → biblioteca -->
-<div class="slide">
-  <div class="logo"><svg viewBox="0 0 32 32"><polygon points="16,2 30,28 2,28" fill="none" stroke="#C87941" stroke-width="1.5"/><polygon points="16,10 24,26 8,26" fill="none" stroke="#C87941" stroke-width=".8"/></svg><span class="logo-t">TRA<b>SCI</b>ENDE</span></div>
-  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1481627834876-b7833e8f84dc?w=1600&q=85&auto=format&fit=crop');--ov:linear-gradient(135deg,rgba(0,21,32,0.52) 0%,rgba(0,37,55,0.52) 100%);"></div>
-  <div class="ph-r" style="background-image:url('https://images.unsplash.com/photo-aMWh608nCQg?w=1600&q=85&auto=format&fit=crop');"></div>
-  <div class="w wr">
-    <span class="ey">Ponente</span>
-    <h2 class="st">Edgardo Heredia Chávez<br><em style="font-size:.68em">Formación Académica</em></h2>
-    <div class="cl"></div>
-    <div class="bio"><div class="bio-l">Licenciatura</div><div class="bio-v">Psicología Industrial · UNAM</div></div>
-    <div class="bio"><div class="bio-l">Maestría</div><div class="bio-v">Recursos Humanos · CIE México / España</div></div>
-    <div class="bio"><div class="bio-l">PNL</div><div class="bio-v">Master PNL Professional Training · DEI / Quantum Leap</div></div>
-    <div class="bio"><div class="bio-l">MBA</div><div class="bio-v">Administración de Empresas · Iberoamericana</div></div>
-    <div class="bio"><div class="bio-l">Calidad</div><div class="bio-v">Especialización Calidad Total · INDHUCE / BANAMEX</div></div>
-    <div class="bio"><div class="bio-l">Coaching</div><div class="bio-v">Certificación Internacional en Coaching con PNL</div></div>
-    <div class="bio"><div class="bio-l">Pedagog.</div><div class="bio-v">Acreditación Pedagógica · Universidad Panamericana</div></div>
-  </div>
-  <span class="sn">011 / 140</span>
-</div>
 
-<!-- S12 TRAYECTORIA: empresas donde trabajó (logos) -->
-<div class="slide">
-  <div class="logo"><svg viewBox="0 0 32 32"><polygon points="16,2 30,28 2,28" fill="none" stroke="#C87941" stroke-width="1.5"/><polygon points="16,10 24,26 8,26" fill="none" stroke="#C87941" stroke-width=".8"/></svg><span class="logo-t">TRA<b>SCI</b>ENDE</span></div>
-  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85&auto=format&fit=crop');--ov:linear-gradient(135deg,rgba(0,21,32,0.52) 0%,rgba(0,37,55,0.52) 100%);"></div>
-  <div class="w">
-    <span class="ey">Trayectoria Profesional</span>
-    <h2 class="st">Edgardo Heredia Chávez<br><em style="font-size:.68em">40+ años de experiencia</em></h2>
-    <div class="cl"></div>
-    <div style="display:grid;grid-template-columns:140px 1fr 140px;gap:18px 24px;max-width:920px;align-items:center">
-      <!-- Mexicana -->
-      <div style="background:#fff;padding:14px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:4px">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Mexicana_de_Aviaci%C3%B3n_logo.svg/300px-Mexicana_de_Aviaci%C3%B3n_logo.svg.png" alt="Mexicana" style="max-width:100%;max-height:100%;object-fit:contain">
-      </div>
-      <div>
-        <div class="tl-l">2 años · Mexicana de Aviación</div>
-        <div class="tl-t" style="margin-top:2px">Relaciones Laborales</div>
-      </div>
-      <div></div>
-
-      <!-- Citibanamex -->
-      <div style="background:#fff;padding:14px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:4px">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Citibanamex_logo.svg/300px-Citibanamex_logo.svg.png" alt="Citibanamex" style="max-width:100%;max-height:100%;object-fit:contain">
-      </div>
-      <div>
-        <div class="tl-l">15 años · Citibanamex</div>
-        <div class="tl-t" style="margin-top:2px">Gerente de Recursos Humanos · Gerente Calidad / Productividad</div>
-      </div>
-      <div></div>
-
-      <!-- Grupo Gigante -->
-      <div style="background:#fff;padding:14px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:4px">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Logotipo_de_Grupo_Gigante.svg/300px-Logotipo_de_Grupo_Gigante.svg.png" alt="Grupo Gigante" style="max-width:100%;max-height:100%;object-fit:contain">
-      </div>
-      <div>
-        <div class="tl-l">3 años · Grupo Gigante</div>
-        <div class="tl-t" style="margin-top:2px">Gerente Nacional de Capacitación · Director</div>
-      </div>
-      <div></div>
-
-      <!-- Trasciende -->
-      <div style="background:var(--navy);padding:14px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:4px;border:1px solid rgba(200,121,65,.3)">
-        <svg width="36" height="36" viewBox="0 0 72 72"><polygon points="36,4 68,64 4,64" fill="none" stroke="#fff" stroke-width="3"/><polygon points="36,22 54,56 18,56" fill="none" stroke="#fff" stroke-width="2"/></svg>
-      </div>
-      <div>
-        <div class="tl-l" style="color:var(--copperl)">20+ años · TRASCIENDE</div>
-        <div class="tl-t" style="margin-top:2px">Facilitador Freelancer · <strong style="color:var(--copper)">Capacitación Empresarial</strong></div>
-      </div>
-      <div></div>
-    </div>
-  </div>
-  <span class="sn">012 / 140</span>
-</div>
-
-<!-- S12b OBJETIVO DEL TALLER -->
+<!-- S013 OBJETIVO DEL TALLER (reubicado después de S010) -->
 <div class="slide">
   <div class="logo"><svg viewBox="0 0 32 32"><polygon points="16,2 30,28 2,28" fill="none" stroke="#C87941" stroke-width="1.5"/><polygon points="16,10 24,26 8,26" fill="none" stroke="#C87941" stroke-width=".8"/></svg><span class="logo-t">TRA<b>SCI</b>ENDE</span></div>
   <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1455849318743-b2c55d2e4576?w=1600&q=85&auto=format&fit=crop');--ov:linear-gradient(135deg,rgba(0,21,32,0.52) 0%,rgba(0,37,55,0.52) 100%);"></div>
@@ -431,6 +360,79 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-fam
 </div>
 
 <!-- S13 DISPOSICIONES EMOCIONALES: collage con íconos para cada disposición -->
+<div class="slide">
+  <div class="logo"><svg viewBox="0 0 32 32"><polygon points="16,2 30,28 2,28" fill="none" stroke="#C87941" stroke-width="1.5"/><polygon points="16,10 24,26 8,26" fill="none" stroke="#C87941" stroke-width=".8"/></svg><span class="logo-t">TRA<b>SCI</b>ENDE</span></div>
+  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1481627834876-b7833e8f84dc?w=1600&q=85&auto=format&fit=crop');--ov:linear-gradient(135deg,rgba(0,21,32,0.52) 0%,rgba(0,37,55,0.52) 100%);"></div>
+  <div class="ph-r" style="background-image:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=85&auto=format&fit=crop');"></div>
+  <div class="w wr">
+    <span class="ey">Ponente</span>
+    <h2 class="st">Edgardo Heredia Chávez<br><em style="font-size:.68em">Formación Académica</em></h2>
+    <div class="cl"></div>
+    <div class="bio"><div class="bio-l">Licenciatura</div><div class="bio-v">Psicología Industrial · UNAM</div></div>
+    <div class="bio"><div class="bio-l">Maestría</div><div class="bio-v">Recursos Humanos · CIE México / España</div></div>
+    <div class="bio"><div class="bio-l">PNL</div><div class="bio-v">Master PNL Professional Training · DEI / Quantum Leap</div></div>
+    <div class="bio"><div class="bio-l">MBA</div><div class="bio-v">Administración de Empresas · Iberoamericana</div></div>
+    <div class="bio"><div class="bio-l">Calidad</div><div class="bio-v">Especialización Calidad Total · INDHUCE / BANAMEX</div></div>
+    <div class="bio"><div class="bio-l">Coaching</div><div class="bio-v">Certificación Internacional en Coaching con PNL</div></div>
+    <div class="bio"><div class="bio-l">Pedagog.</div><div class="bio-v">Acreditación Pedagógica · Universidad Panamericana</div></div>
+  </div>
+  <span class="sn">011 / 140</span>
+</div>
+
+<!-- S12 TRAYECTORIA: empresas donde trabajó (logos) -->
+<div class="slide">
+  <div class="logo"><svg viewBox="0 0 32 32"><polygon points="16,2 30,28 2,28" fill="none" stroke="#C87941" stroke-width="1.5"/><polygon points="16,10 24,26 8,26" fill="none" stroke="#C87941" stroke-width=".8"/></svg><span class="logo-t">TRA<b>SCI</b>ENDE</span></div>
+  <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85&auto=format&fit=crop');--ov:linear-gradient(135deg,rgba(0,21,32,0.52) 0%,rgba(0,37,55,0.52) 100%);"></div>
+  <div class="w">
+    <span class="ey">Trayectoria Profesional</span>
+    <h2 class="st">Edgardo Heredia Chávez<br><em style="font-size:.68em">40+ años de experiencia</em></h2>
+    <div class="cl"></div>
+    <div style="display:grid;grid-template-columns:140px 1fr 140px;gap:18px 24px;max-width:920px;align-items:center">
+      <!-- Mexicana -->
+      <div style="background:#fff;padding:14px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:4px">
+        <img src="https://raw.githubusercontent.com/rahele95/vidara-trasciende/main/logo_mexicana.jpg" alt="Mexicana" style="max-width:100%;max-height:100%;object-fit:contain">
+      </div>
+      <div>
+        <div class="tl-l">2 años · Mexicana de Aviación</div>
+        <div class="tl-t" style="margin-top:2px">Relaciones Laborales</div>
+      </div>
+      <div></div>
+
+      <!-- Citibanamex -->
+      <div style="background:#fff;padding:14px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:4px">
+        <img src="https://raw.githubusercontent.com/rahele95/vidara-trasciende/main/logo_citibanamex.jpg" alt="Citibanamex" style="max-width:100%;max-height:100%;object-fit:contain">
+      </div>
+      <div>
+        <div class="tl-l">15 años · Citibanamex</div>
+        <div class="tl-t" style="margin-top:2px">Gerente de Recursos Humanos · Gerente Calidad / Productividad</div>
+      </div>
+      <div></div>
+
+      <!-- Grupo Gigante -->
+      <div style="background:#fff;padding:14px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:4px">
+        <img src="https://raw.githubusercontent.com/rahele95/vidara-trasciende/main/logo_gigante.jpg" alt="Grupo Gigante" style="max-width:100%;max-height:100%;object-fit:contain">
+      </div>
+      <div>
+        <div class="tl-l">3 años · Grupo Gigante</div>
+        <div class="tl-t" style="margin-top:2px">Gerente Nacional de Capacitación · Director</div>
+      </div>
+      <div></div>
+
+      <!-- Trasciende -->
+      <div style="background:var(--navy);padding:14px;height:64px;display:flex;align-items:center;justify-content:center;border-radius:4px;border:1px solid rgba(200,121,65,.3)">
+        <svg width="36" height="36" viewBox="0 0 72 72"><polygon points="36,4 68,64 4,64" fill="none" stroke="#fff" stroke-width="3"/><polygon points="36,22 54,56 18,56" fill="none" stroke="#fff" stroke-width="2"/></svg>
+      </div>
+      <div>
+        <div class="tl-l" style="color:var(--copperl)">20+ años · TRASCIENDE</div>
+        <div class="tl-t" style="margin-top:2px">Facilitador Freelancer · <strong style="color:var(--copper)">Capacitación Empresarial</strong></div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <span class="sn">012 / 140</span>
+</div>
+
+<!-- S12b OBJETIVO DEL TALLER -->
 <div class="slide">
   <div class="logo"><svg viewBox="0 0 32 32"><polygon points="16,2 30,28 2,28" fill="none" stroke="#C87941" stroke-width="1.5"/><polygon points="16,10 24,26 8,26" fill="none" stroke="#C87941" stroke-width=".8"/></svg><span class="logo-t">TRA<b>SCI</b>ENDE</span></div>
   <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1516321318736-33ab3c7053b2?w=1600&q=85&auto=format&fit=crop');--ov:linear-gradient(135deg,rgba(0,21,32,0.52) 0%,rgba(0,37,55,0.52) 100%);"></div>
