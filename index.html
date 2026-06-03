@@ -10,7 +10,7 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-family:'Montserrat',sans-serif}
 #deck{position:relative;width:100vw;height:100vh;overflow:hidden}
-.slide{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .55s ease;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.slide{position:absolute;inset:0;opacity:0;visibility:hidden;pointer-events:none;overflow:hidden;display:flex;align-items:center;justify-content:center}.slide.active{visibility:visible;transition:opacity .55s ease}
 .slide.active{opacity:1;pointer-events:all}
 /* BG */
 .bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center}
@@ -20,12 +20,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-fam
 .ph-l{position:absolute;top:0;left:0;width:40%;height:100%;z-index:1;background-size:cover;background-position:center top}
 .ph-l::after{content:'';position:absolute;inset:0;background:linear-gradient(to left,var(--dark) 0%,rgba(0,21,32,.05) 70%)}
 /* LOGO */
-.logo{position:absolute;top:30px;left:48px;z-index:3;display:flex;align-items:center;gap:10px}
+.logo{position:absolute;top:30px;left:48px;z-index:10;display:flex;align-items:center;gap:10px}
 .logo svg{width:22px;height:22px}
 .logo-t{font-size:12px;font-weight:600;letter-spacing:4px;color:#fff;text-transform:uppercase}
 .logo-t b{color:var(--copper)}
 /* SN */
-.sn{position:absolute;bottom:26px;right:48px;font-size:13px;font-weight:500;letter-spacing:3.5px;color:rgba(255,255,255,.75);font-family:'Montserrat',sans-serif;text-transform:uppercase}
+.sn{position:absolute;bottom:26px;right:48px;z-index:10;font-size:14px;font-weight:600;letter-spacing:3px;color:rgba(255,255,255,.85)}
 /* WRAP */
 .w{position:relative;z-index:2;width:100%;max-width:1100px;padding:76px 68px}
 .wr{padding-right:48%}
@@ -247,7 +247,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-fam
       </video>
     </div>
   </div>
-  <span class="sn">007b</span>
+  <span class="sn" style="font-size:13px">007b</span>
 </div>
 
 <!-- S08 NUEVAS OPCIONES CLIENTES: red personas → personas conectadas/red -->
@@ -281,7 +281,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-fam
       </video>
     </div>
   </div>
-  <span class="sn">008b</span>
+  <span class="sn" style="font-size:13px">008b</span>
 </div>
 
 <div class="slide">
@@ -854,7 +854,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--dark);font-fam
       <img src="https://raw.githubusercontent.com/rahele95/vidara-trasciende/main/dinamica_solucion.jpg" alt="Solución 9 puntos" style="max-height:62vh;max-width:90%;object-fit:contain;border:1px solid rgba(200,121,65,.25);border-radius:4px;box-shadow:0 8px 40px rgba(0,0,0,.5)">
     </div>
   </div>
-  <span class="sn">031b</span>
+  <span class="sn" style="font-size:13px">031b</span>
 </div>
 
 
@@ -2641,7 +2641,7 @@ document.getElementById('deck').addEventListener('click',e=>{if(e.target.closest
 let tx=0;
 document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true});
 document.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50){d<0?nx():pv();}},{passive:true});
-document.getElementById('pb').style.width=(1/T*100)+'%';S.forEach((s,i)=>{if(i!==0)s.style.visibility='hidden';});
+document.getElementById('pb').style.width=(1/T*100)+'%';
 setTimeout(()=>document.getElementById('hint').style.opacity='0',4000);
 </script>
 </body>
